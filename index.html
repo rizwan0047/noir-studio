@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOIR® — Digital Design Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/Css/style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <h1 class="preloader-text">NOIR<span>®</span></h1>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    <p class="preloader-percent">0%</p>
+  </div>
+
+  <!-- Noise texture overlay -->
+  <div class="noise"></div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#" class="logo">NOIR<sup>®</sup></a>
+    <ul class="nav-links">
+      <li><a href="#work" data-hover>Work</a></li>
+      <li><a href="#services" data-hover>Services</a></li>
+      <li><a href="#about" data-hover>About</a></li>
+      <li><a href="#awards" data-hover>Awards</a></li>
+      <li><a href="#contact" data-hover>Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta magnetic" data-hover>Let's Talk</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-tag reveal">Digital Design Studio — Est. 2024</p>
+    <h1 class="hero-title">
+      <span class="line"><span class="word">WE</span></span>
+      <span class="line"><span class="word">CRAFT</span></span>
+      <span class="line"><span class="word outline">DIGITAL</span></span>
+      <span class="line"><span class="word">EXPERIENCES</span></span>
+    </h1>
+    <div class="hero-bottom">
+      <p class="reveal">Based in Taipei / Working Worldwide</p>
+      <p class="reveal hero-clock">Local time — <span id="clock">00:00:00</span></p>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <!-- Floating hero orb -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <section class="marquee-section">
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>BRANDING</span><span class="dot">✦</span>
+        <span>WEB DESIGN</span><span class="dot">✦</span>
+        <span>MOTION</span><span class="dot">✦</span>
+        <span>DEVELOPMENT</span><span class="dot">✦</span>
+        <span>BRANDING</span><span class="dot">✦</span>
+        <span>WEB DESIGN</span><span class="dot">✦</span>
+        <span>MOTION</span><span class="dot">✦</span>
+        <span>DEVELOPMENT</span><span class="dot">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <p class="section-label reveal">(01) — About</p>
+    <h2 class="about-title">
+      We blend <em>strategy</em>, design & technology to build brands
+      people <em>remember.</em>
+    </h2>
+    <div class="about-stats">
+      <div class="stat reveal"><h3 data-count="48">0</h3><p>Projects Shipped</p></div>
+      <div class="stat reveal"><h3 data-count="12">0</h3><p>Awards Won</p></div>
+      <div class="stat reveal"><h3 data-count="9">0</h3><p>Countries</p></div>
+      <div class="stat reveal"><h3 data-count="120">0</h3><p>Cups of Coffee</p></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <p class="section-label reveal">(02) — What We Do</p>
+    <div class="service-list">
+
+      <div class="service-item reveal" data-hover>
+        <div class="service-head">
+          <span class="service-num">/01</span>
+          <h3>Brand Identity</h3>
+          <span class="service-arrow">↓</span>
+        </div>
+        <div class="service-body">
+          <p>Logos, visual systems, art direction and brand guidelines that make your company unforgettable.</p>
+          <div class="tags"><span>Logo</span><span>Guidelines</span><span>Art Direction</span><span>Naming</span></div>
+        </div>
+      </div>
+
+      <div class="service-item reveal" data-hover>
+        <div class="service-head">
+          <span class="service-num">/02</span>
+          <h3>Web Design & Development</h3>
+          <span class="service-arrow">↓</span>
+        </div>
+        <div class="service-body">
+          <p>Pixelperfect, blazing-fast websites built with modern tech. From landing pages to full platforms.</p>
+          <div class="tags"><span>UI/UX</span><span>Webflow</span><span>React</span><span>E-commerce</span></div>
+        </div>
+      </div>
+
+      <div class="service-item reveal" data-hover>
+        <div class="service-head">
+          <span class="service-num">/03</span>
+          <h3>Motion & Interaction</h3>
+          <span class="service-arrow">↓</span>
+        </div>
+        <div class="service-body">
+          <p>Scroll animations, micro-interactions, 3D scenes and video that bring interfaces to life.</p>
+          <div class="tags"><span>GSAP</span><span>Three.js</span><span>Lottie</span><span>Video</span></div>
+        </div>
+      </div>
+
+      <div class="service-item reveal" data-hover>
+        <div class="service-head">
+          <span class="service-num">/04</span>
+          <h3>Product Strategy</h3>
+          <span class="service-arrow">↓</span>
+        </div>
+        <div class="service-body">
+          <p>Research, positioning and roadmaps. We find the sharp idea before we design anything.</p>
+          <div class="tags"><span>Research</span><span>Positioning</span><span>Roadmap</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <p class="section-label reveal">(03) — Selected Work</p>
+
+    <a href="#" class="project reveal" data-hover>
+      <div class="project-img">
+        <img src="https://picsum.photos/id/1015/1400/900" alt="Project One" loading="lazy">
+        <span class="project-year">2024</span>
+      </div>
+      <div class="project-info">
+        <h3>Aether Studio</h3>
+        <p>Brand Identity · Web · 2024</p>
+      </div>
+    </a>
+
+    <a href="#" class="project reveal right" data-hover>
+      <div class="project-img">
+        <img src="https://picsum.photos/id/1035/1400/900" alt="Project Two" loading="lazy">
+        <span class="project-year">2024</span>
+      </div>
+      <div class="project-info">
+        <h3>Kinfolk Coffee</h3>
+        <p>E-Commerce · Motion · 2024</p>
+      </div>
+    </a>
+
+    <a href="#" class="project reveal" data-hover>
+      <div class="project-img">
+        <img src="https://picsum.photos/id/1043/1400/900" alt="Project Three" loading="lazy">
+        <span class="project-year">2023</span>
+      </div>
+      <div class="project-info">
+        <h3>Vanta Labs</h3>
+        <p>Product Design · Dev · 2023</p>
+      </div>
+    </a>
+
+    <a href="#" class="project reveal right" data-hover>
+      <div class="project-img">
+        <img src="https://picsum.photos/id/1062/1400/900" alt="Project Four" loading="lazy">
+        <span class="project-year">2023</span>
+      </div>
+      <div class="project-info">
+        <h3>Mono Hotel</h3>
+        <p>Branding · Booking Platform · 2023</p>
+      </div>
+    </a>
+  </section>
+
+  <!-- HORIZONTAL GALLERY -->
+  <section class="gallery-section">
+    <p class="section-label reveal">(04) — Visual Playground</p>
+    <div class="gallery-track" id="gallery-track">
+      <figure class="g-item"><img src="https://picsum.photos/id/1027/600/750" alt="" loading="lazy"><figcaption>Frame 01</figcaption></figure>
+      <figure class="g-item tall"><img src="https://picsum.photos/id/1011/500/800" alt="" loading="lazy"><figcaption>Frame 02</figcaption></figure>
+      <figure class="g-item"><img src="https://picsum.photos/id/1039/650/700" alt="" loading="lazy"><figcaption>Frame 03</figcaption></figure>
+      <figure class="g-item wide"><img src="https://picsum.photos/id/1050/800/550" alt="" loading="lazy"><figcaption>Frame 04</figcaption></figure>
+      <figure class="g-item"><img src="https://picsum.photos/id/1069/600/720" alt="" loading="lazy"><figcaption>Frame 05</figcaption></figure>
+      <figure class="g-item tall"><img src="https://picsum.photos/id/1074/520/820" alt="" loading="lazy"><figcaption>Frame 06</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="awards" id="awards">
+    <p class="section-label reveal">(05) — Recognition</p>
+    <ul class="awards-list">
+      <li class="award-row reveal" data-hover>
+        <span class="award-name">Awwwards — Site of the Day</span>
+        <span class="award-project">Aether Studio</span>
+        <span class="award-year">2024</span>
+      </li>
+      <li class="award-row reveal" data-hover>
+        <span class="award-name">CSS Design Awards — WOTD</span>
+        <span class="award-project">Kinfolk Coffee</span>
+        <span class="award-year">2024</span>
+      </li>
+      <li class="award-row reveal" data-hover>
+        <span class="award-name">FWA — FWA of the Day</span>
+        <span class="award-project">Vanta Labs</span>
+        <span class="award-year">2023</span>
+      </li>
+      <li class="award-row reveal" data-hover>
+        <span class="award-name">Behance — Featured</span>
+        <span class="award-project">Mono Hotel</span>
+        <span class="award-year">2023</span>
+      </li>
+      <li class="award-row reveal" data-hover>
+        <span class="award-name">Type Directors Club — Winner</span>
+        <span class="award-project">NOIR Identity</span>
+        <span class="award-year">2022</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <p class="section-label reveal">(06) — Kind Words</p>
+    <div class="testimonial-slider">
+      <div class="t-slide active">
+        <blockquote>"Working with NOIR felt like hiring a team from the future. Every pixel had intent."</blockquote>
+        <p class="t-author">— Sarah Lin, CEO @ Aether Studio</p>
+      </div>
+      <div class="t-slide">
+        <blockquote>"They didn't just redesign our site — they redesigned how our customers feel about us."</blockquote>
+        <p class="t-author">— Marcus Chen, Founder @ Kinfolk Coffee</p>
+      </div>
+      <div class="t-slide">
+        <blockquote>"The launch tripled our conversion rate in one month. Numbers don't lie."</blockquote>
+        <p class="t-author">— Yuki Tanaka, CPO @ Vanta Labs</p>
+      </div>
+      <div class="t-controls">
+        <button id="t-prev" data-hover>←</button>
+        <span id="t-index">01 / 03</span>
+        <button id="t-next" data-hover>→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <p class="section-label reveal">(07) — FAQ</p>
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary data-hover>What's your typical project timeline?<span class="faq-icon">+</span></summary>
+        <p>Most branding projects take 4–6 weeks. Full websites take 6–10 weeks depending on scope.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary data-hover>Do you work with startups?<span class="faq-icon">+</span></summary>
+        <p>Absolutely. We love early-stage teams with bold ideas — we offer flexible engagement models.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary data-hover>What does a project cost?<span class="faq-icon">+</span></summary>
+        <p>Projects start at 8kforidentityworkand8k for identity work and8kforidentityworkand15k for websites. We quote fixed-price after discovery.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary data-hover>Can you take over an existing product?<span class="faq-icon">+</span></summary>
+        <p>Yes — we audit first, then propose either a refresh or a rebuild based on what serves you best.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- BIG CTA -->
+  <section class="cta" id="contact">
+    <p class="section-label reveal">(08) — Contact</p>
+    <a href="mailto:hello@noir.studio" class="cta-link magnetic" data-hover>
+      LET'S WORK<br><span class="outline">TOGETHER</span>
+      <svg viewBox="0 0 24 24" width="60" height="60" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M7 17L17 7M7 7h10v10"/>
+      </svg>
+    </a>
+    <form class="contact-form reveal" onsubmit="event.preventDefault(); this.querySelector('.form-msg').textContent='Thanks! We\'ll reply within 24h ✦';">
+      <input type="text" placeholder="Your name" required />
+      <input type="email" placeholder="Your email" required />
+      <textarea placeholder="Tell us about your project..." rows="3" required></textarea>
+      <button type="submit" class="btn magnetic" data-hover>Send Message ↗</button>
+      <p class="form-msg"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-marquee">
+      <div class="marquee-track">
+        <span>NOIR®</span><span>—</span><span>NOIR®</span><span>—</span>
+        <span>NOIR®</span><span>—</span><span>NOIR®</span><span>—</span>
+      </div>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <h4>Sitemap</h4>
+        <a href="#work" data-hover>Work</a>
+        <a href="#services" data-hover>Services</a>
+        <a href="#awards" data-hover>Awards</a>
+      </div>
+      <div>
+        <h4>Socials</h4>
+        <a href="#" data-hover>Instagram</a>
+        <a href="#" data-hover>Dribbble</a>
+        <a href="#" data-hover>X / Twitter</a>
+      </div>
+      <div>
+        <h4>Office</h4>
+        <p>No. 88 Dunhua Rd<br>Taipei, Taiwan</p>
+      </div>
+      <div>
+        <h4>New Business</h4>
+        <a href="mailto:hello@noir.studio" data-hover>hello@noir.studio</a>
+        <a href="tel:+886212345678" data-hover>+886 2 1234 5678</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 NOIR Studio — All rights reserved</p>
+      <p>Taipei, TW — 25.03°N 121.56°E</p>
+      <a href="#top" data-hover>Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="Assets/Js/main.js"></script>
+</body>
+</html>
